@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <meta charset="utf-8">
+    <title>fCC: Survey Form</title>
+  </head>
+  <body>
+    <script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">
+
+    </script>
+    <h1 id="title">Survey Form</h1>
+    <div id="main-form">
+      <div class="flexrow">
+          <p id="description">Let us know how we can improve freeCodeCamp</p>
+      </div>
+
+      <form id="survey-form" action="index.html" method="post">
+
+      <!-- NAME field -->
+      <div class="flexrow">
+        <div class="leftblock">
+            <label id="name-label" for="name">*Name:</label>
+        </div>
+        <div class="rightblock">
+            <input id="name" type="text" name="name" placeholder="Enter your name" required>
+        </div>
+      </div>
+
+      <!-- EMAIL field -->
+      <div class="flexrow">
+        <div class="leftblock">
+          <label id="email-label" for="email">*Email:</label>
+        </div>
+        <div class="rightblock">
+          <input id="email" type="email" name="email" placeholder="Enter your email" required>
+        </div>
+      </div>
+
+      <!-- AGE field -->
+      <div class="flexrow">
+        <div class="leftblock">
+          <label id="number-label" for="age">*Age:</label>
+        </div>
+        <div class="rightblock">
+          <input id="number" type="number" name="age" placeholder="Age" min="9" max="100">
+        </div>
+      </div>
+
+      <!-- ROLE dropdown -->
+      <div class="flexrow">
+        <div class="leftblock">
+          <label id="role" for="role">Which option best describes your current role?</label>
+        </div>
+        <div class="rightblock">
+          <select id ="dropdown" class="" name="role">
+            <option value="Student">Student</option>
+            <option value="Full Time Job">Full Time Job</option>
+            <option value="Full Time Learner">Full Time Learner</option>
+            <option value="Prefer not to say">Prefer not to say</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- RECOMMEND radio buttons -->
+      <div class="flexrow">
+        <div class="leftblock">
+          <label for="recommend">* How likely is that you would recommend freeCodeCamp to a friend?</label>
+        </div>
+        <div class="rightblock">
+          <ul>
+            <li>
+              <input type="radio" name="recommend" value="Definitely">
+              <label for="Definitely">Definitely</label>
+            </li>
+            <li>
+              <input type="radio" name="recommend" value="Maybe">
+              <label for="Maybe">Maybe</label>
+            </li>
+            <li>
+              <input type="radio" name="recommend" value="Not sure">
+              <label for="Not sure">Not sure</label>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- WHAT DO YOU LIKE dropdown -->
+      <div class="flexrow">
+        <div class="leftblock">
+          <label id="likes" for="likes">What do you like most in FCC?</label>
+        </div>
+        <div class="rightblock">
+          <select id ="likes-dropdown" class="" name="likes">
+            <option value="" disabled selected>Select an option</option>
+            <option value="Challenges">Challenges</option>
+            <option value="Projects">Projects</option>
+            <option value="Community">Community</option>
+            <option value="Open Source">Open Source</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- IMPROVEMENT checkboxes -->
+      <div class="flexrow">
+        <div class="leftblock">
+          <label for="improvements">Things that should be improved in the future (Check all that apply)</label>
+        </div>
+        <div class="rightblock">
+          <ul>
+            <li><input type="checkbox" name="improvements" value="Front-end Projects">Front-end Projects</li>
+            <li><input type="checkbox" name="improvements" value="Back-end Projects">Back-end Projects</li>
+            <li><input type="checkbox" name="improvements" value="Data Visualisation">Data Visualisaton</li>
+            <li><input type="checkbox" name="improvements" value="Challenges">Challenges</li>
+            <li><input type="checkbox" name="improvements" value="Open Source Community">Open Source Community</li>
+            <li><input type="checkbox" name="improvements" value="Gitter help rooms">Gitter help rooms</li>
+            <li><input type="checkbox" name="improvements" value="Videos">Videos</li>
+            <li><input type="checkbox" name="improvements" value="City Meetups">City Meetups</li>
+            <li><input type="checkbox" name="improvements" value="Wiki">Wiki</li>
+            <li><input type="checkbox" name="improvements" value="Forum">Forum</li>
+            <li><input type="checkbox" name="improvements" value="Additional Courses">Additional Courses</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- COMMENTS area -->
+      <div class="flexrow">
+        <div class="leftblock">
+          <label for="comments">Any Comments or Suggestions?</label>
+        </div>
+        <div class="rightblock">
+          <textarea name="comments" rows="4" cols="40" placeholder="Enter your comments here..."></textarea>
+        </div>
+      </div>
+
+      <button id="submit" type="submit" name="submit">Submit</button>
+      </form>
+    </div>
+
+
+  </body>
+</html>
