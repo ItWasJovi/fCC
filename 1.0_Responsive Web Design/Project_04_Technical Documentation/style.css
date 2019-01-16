@@ -23,6 +23,22 @@ a {
   text-decoration: none;
 }
 
+ul {
+  margin-left: 25px;
+  line-height: 2.5em;
+}
+
+code {
+  padding: 10px 25px;
+  margin: 10px 50px;
+  white-space: pre-line;
+  background: #222222;
+  display: block;
+  border-radius: 4px;
+  line-height: 2em;
+  color: #c3073f;
+}
+
 .nav-link {
   padding: 10px 0 10px 40px;
   border-top: 1px solid;
@@ -46,7 +62,35 @@ a {
   position: absolute;
 }
 
+.code {
+  padding: 5px;
+  margin: 0px 10px;
+  background: #222222;
+  font-family: Lucida Console;
+}
 
 p {
   padding: 0 25px 0 25px;
+}
+
+.flex-grid {
+  display: flex;
+  padding: 0 25px 0 25px;
+}
+
+@media (max-width: 700px) {
+  .flex-grid {
+    display: flex;
+    padding: 0 25px 0 25px;
+    flex-direction: column;
+  }
+}
+
+.col {
+  flex: 1;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  line-height: 100px;
+  height: 100px;
 }

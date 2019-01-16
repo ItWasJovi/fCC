@@ -2,44 +2,124 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700" rel="stylesheet">
+    <script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js" defer>
+    </script>
     <title>fCC #4 - Technical Documentation Page</title>
   </head>
   <body>
     <nav id="navbar">
-      <h1>Destiny 2 Forsaken</h1>
+      <header>
+        <h1>CSS Documentation</h1>
+      </header>
       <a class="nav-link" href="#Introduction">Introduction</a>
       <a class="nav-link" href="#What_You_Should_Know">What You Should Know</a>
-
+      <a class="nav-link" href="#Flexbox">Flexbox</a>
+      <a class="nav-link" href="#Alignment">Alignment</a>
+      <a class="nav-link" href="#Colour_Themes">Colour Themes</a>
     </nav>
 
     <main id="main-doc">
 
       <section id="Introduction" class="main-section">
-        <h2>Introduction</h2>
-        <p>Welcome to a very rough database for various things in Destiny 2 Forsaken! The expansions puts Destiny 2 in the best state it's ever been, but it's still definitely not without drawbacks (looking at you, Enhancement cores).</p>
+        <header>
+          <h2>Introduction</h2>
+        </header>
+        <p>Welcome to a page about some of the more annoying parts of CSS. Of course, this is a purely subjective page and will only serve to cover the parts of CSS that I personally find annoying.</p>
 
-        <p>This guide will contain info about things such as Pinnacle Weapons, Spider Bounties, Black Armory stuff, and more!</p>
+        <p>Most of it deals with the awesome yet for some reason confusing nature of Flexbox; and then some stuff about aligning content.</p>
       </section>
 
       <section id="What_You_Should_Know" class="main-section">
+        <header>
+          <h2>What You Should Know</h2>
+        </header>
 
+        <p>The following pages assume that you have a decent knowledge of how to write and use CSS:</p>
+
+        <ul>
+          <li>How to declare CSS classes</li>
+          <li>How to implement CSS in HTML documents</li>
+          <li>What different CSS tags do</li>
+        </ul>
+
+        <p>Just as a quick reminder, this is the HTML tag for including CSS files</p>
+        <code>&lt;link rel="stylesheet" href="style.css"&gt;</code>
       </section>
 
-      <section class="main-section">
+      <section id="Flexbox" class="main-section">
+        <header>
+          <h2>Flexbox</h2>
+        </header>
+        <p>One of the easiest ways to create a multi-column layout is using Flexbox</p>
+        <code>.flex-grid {
+            display: flex;
+          }
 
+          .col {
+            flex: 1;
+          }</code>
+
+        <p>Depending on how many div columns you apply this class to, you'll have equal-sized columns.</p>
+
+        <p>As a general rule it's good to not have more than 12 columns in total.</p>
       </section>
 
-      <section class="main-section">
+      <section id="Alignment" class="main-section">
+        <header>
+          <h2>Alignment</h2>
+        </header>
+        <p>For <strong>Flexbox</strong> centering, you just need to use the two centering properties:</p>
+        <code>.parent {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }</code>
 
+        <p>For <strong>block-level elements</strong>, just use auto margins:</p>
+        <code>.center {
+          margin: 0 auto;
+        }</code>
+
+        <p>Of course there are other elements that you might want to center such as:</p>
+        <ul>
+          <li>Inline elements: Text, links</li>
+          <li>Multiple block-level elements</li>
+          <li>Vertical centering</li>
+        </ul>
+
+        <p>A quick tip for vertically centering text is to make the line height equal to the container height:</p>
+        <code>.container {
+          height: 100px;
+          line-height: 100px;
+        }</code>
       </section>
 
-      <section class="main-section">
+      <section id="Colour_Themes" class="main-section">
+        <header>
+          <h2>Colour Themes</h2>
+        </header>
+        <p>Coming up with colour themes can be tough, but here are some that you can use for your projects; all shamelessly stolen from other sites.</p>
 
-      </section>
-
+      <p><strong>Contemporary and Bold</strong></p>
+      <div class="flex-grid">
+        <div class="col" style="background: #1a1a1d">
+          #1A1A1D
+        </div>
+        <div class="col" style="background: #4e4e50">
+          #4E4E50
+        </div>
+        <div class="col" style="background: #950740">
+          #950740
+        </div>
+        <div class="col" style="background: #c3073f">
+          #C3073F
+        </div>
+      </div>
+      <p>More themes can be found <a href="https://visme.co/blog/website-color-schemes/">here</a>.</p>
+    </section>
     </main>
-
   </body>
 </html>
