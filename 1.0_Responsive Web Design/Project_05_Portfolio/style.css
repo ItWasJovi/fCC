@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#navbar ul {
+  position: fixed;
+  width: 100%;
+  text-align: right;
+  box-sizing: border-box;
+}
+
+#navbar li {
+  display: inline-block;
+  list-style: none;
+  padding: 0 25px;
+}
+
+#navbar a {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-decoration: none;
+  color: #c3073f;
+  font-family: Montserrat;
+}
+
+.landing {
+  background: #1a1a1d;
+  height: 100vh;
+  text-align: center;
+  padding-top: 45vh;
+  top: 0;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0;
+  line-height: 0.5em;
+}
+
+p {
+
+}
